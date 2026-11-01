@@ -1,0 +1,34 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Runtime data
+*.db
+*.sqlite
+*.sqlite3
+/uploads/
+/outputs/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+
+# Logs and editor files
+*.log
+.vscode/
+.idea/
+
+# AMI corpus and duplicate large test fixtures; retain the synthetic demo
+/testdata/*
+!/testdata/README.md
+!/testdata/sample_meeting.mp4
+!/testdata/sample_meeting.wav
+/test_data/
